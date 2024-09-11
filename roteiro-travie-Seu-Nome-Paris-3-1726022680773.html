@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="title" content="Travie - Roteiro personalizado para Seu Nome de 3 dias para Paris">
+  <meta name="image" content="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTcwOTMwMjc3Nnww&ixlib=rb-4.0.3&q=80&w=1200">
+  <meta name="description" content="Veja o plano de viagem incrível que criamos personalizado para você. A Travie está aqui para tornar tudo mais fácil e empolgante, tornando sua viagem ainda mais incrível e inesquecível.">
+  <meta name="keywords" content="Viagem, Trip, Travel, Roteiro, Plano de Viagem, Roteiro Personalizado, Intinerário de Viagens, Dicas de Viagens">
+  <meta name="author" content="Nino Lodi">
+  <meta name="date" content="23/06/2024">
+  
+  <!--  Essential META Tags -->
+  <meta property="og:title" content="Travie - Roteiro personalizado para Seu Nome de 3 dias para Paris">
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTcwOTMwMjc3Nnww&ixlib=rb-4.0.3&q=80&w=1200">
+  <meta property="og:url" content="http://blog.travie.com.br">
+  <meta name="twitter:card" content="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTcwOTMwMjc3Nnww&ixlib=rb-4.0.3&q=80&w=1200">
+
+  <!--  Non-Essential, But Recommended -->
+  <meta property="og:description" content="<p><b>Paris</b> é a capital e a maior cidade da França, com uma população estimada de 2.102.650 habitantes em janeiro de 2023, abrigada em uma área de mais de 105 km². Desde o século XVII, Paris tem sido um dos principais centros mundiais de finanças, diplomacia, comércio, cultura, moda e gastronomia. Conhecida como a <i>cidade da luz</i>, Paris destaca-se por sua rica história no desenvolvimento das artes e ciências, além de possuir um sistema de iluminação pública extenso desde o século XIX.</p> <p>A cidade é famosa por suas museus e marcos arquitetônicos, como o <b>Louvre</b>, que é o museu de arte mais visitado do mundo. Os visitantes também podem explorar o <b>Musée d'Orsay</b> e o <b>Centro Pompidou</b>, famosos por suas coleções de arte Impressionista e moderna. O centro histórico ao longo do rio Sena é classificado como Patrimônio Mundial da UNESCO desde 1991.</p> <p>Paris também é um importante hub de transporte, servida por dois aeroportos internacionais e um sistema de metrô que recebe milhões de passageiros diariamente. A cidade se destaca na sustentabilidade de seu transporte e hospeda várias organizações internacionais, incluindo a UNESCO.</p> <p>Prepare-se para se encantar com a beleza, a cultura vibrante e a gastronomia incomparável de <b>Paris</b>.</p>">
+  <meta property="og:site_name" content="Travie - Seu parceiro de viagens">
+  <meta name="twitter:image:alt" content="Travie - Roteiro personalizado para Seu Nome de 3 dias para Paris">
+
+  <title>Travie - Roteiro personalizado para Seu Nome de 3 dias para Paris</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/favicon.jpg" type="image/x-icon">
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/bootstrap.min.css">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/swiper-bundle.min.css">
+
+  <!-- datepicker -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/jquery.datetimepicker.css">
+
+  <!-- jquery ui -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/jquery-ui.min.css">
+
+  <!-- common -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/common.css">
+
+  <!-- animations -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/animations.css">
+
+  <!-- welcome -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/welcome.css">
+
+  <!-- profile -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/profile.css">
+
+  <!-- datetime -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/datetimepicker.css">
+
+  <!-- details -->
+  <link rel="stylesheet" href="https://tagevent.com.br/arquivos/temp/test/travgo/assets/css/details.css">
+</head>
+<body class="scrollbar-hidden" style="width: 100%; text-align: center; background-color: #f6f6f6;">
+  <!-- splash-screen start -->
+  <section id="preloader" class="spalsh-screen">
+    <div class="circle text-center">
+      <div>
+        <h1>Travie</h1>
+        <p>Seu parceiro de viagens</p>
+      </div>
+    </div>
+    <div class="loader-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </section>
+  <!-- splash-screen end -->
+
+  <main class="details vacation-details" style="max-width: 600px; text-align: left; margin: 0px auto; background-color:#fff; box-shadow: 0px 0px 0px 0px darkgray, -0em 0 .9em darkgray;">
+    <!-- banner start -->
+    <section class="banner position-relative">
+      <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDN8fHBhcmlzfGVufDB8fHx8MTcwOTMwMjc3Nnww&ixlib=rb-4.0.3&q=80&w=1200" alt="Cidade" class="w-100 img-fluid">
+      
+      <!-- title -->
+      <!--<div class="page-title">
+        <button type="button" class="back-btn back-page-btn d-flex align-items-center justify-content-center rounded-full">
+          <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/arrow-left-black.svg" alt="arrow">
+        </button>
+        <h3 class="main-title"></h3>
+      </div>-->
+    </section>
+    <!-- banner end -->
+
+    <!-- details-body start -->
+    <section class="details-body" style="margin-top: -25px;">
+      
+      <!-- details-title -->
+      <section class="d-flex align-items-center gap-8 details-title">
+        <div class="flex-grow">
+          <h3>Seu Plano de Viagem</h3>
+          <ul class="d-flex align-items-center gap-8">
+            <li class="d-flex align-items-center gap-04">
+              <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/bottom-nav/profile-active.svg" alt="icon">
+              <p>Seu Nome</p>
+            </li>
+            <!--<li class="d-flex align-items-center gap-04">
+              <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="icon">
+              <p><span>4.4</span> (41 Reviews)</p>
+            </li>-->
+          </ul>
+        </div>
+        <span class="d-flex align-items-center justify-content-center rounded-full shrink-0">
+          <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/heart-red-light.svg" alt="">
+        </span>
+      </section>
+
+    <!-- summary start -->
+    <section class="summary d-flex align-items-center justify-content-between py-12">
+      <div class="text-center">
+        <p>Destino</p>
+        <h5>Paris</h5>
+      </div>
+      <div class="divider"></div>
+      <div class="text-center">
+        <p>Período</p>
+        <h5>3 dias</h5>
+      </div>
+      <div class="divider"></div>
+      <div class="text-center">
+        <p>Época</p>
+        <h5>Julho de 2025</h5>
+      </div>
+    </section>
+    <!-- summary end -->
+
+      <!-- details-info -->
+      <section class="details-info pt-32 pb-16">
+        <div class="title">
+          <h4>Sobre o Destino</h4>
+        </div>
+        <p><b>Paris</b> é a capital e a maior cidade da França, com uma população estimada de 2.102.650 habitantes em janeiro de 2023, abrigada em uma área de mais de 105 km². Desde o século XVII, Paris tem sido um dos principais centros mundiais de finanças, diplomacia, comércio, cultura, moda e gastronomia. Conhecida como a <i>cidade da luz</i>, Paris destaca-se por sua rica história no desenvolvimento das artes e ciências, além de possuir um sistema de iluminação pública extenso desde o século XIX.</p> <p>A cidade é famosa por suas museus e marcos arquitetônicos, como o <b>Louvre</b>, que é o museu de arte mais visitado do mundo. Os visitantes também podem explorar o <b>Musée d'Orsay</b> e o <b>Centro Pompidou</b>, famosos por suas coleções de arte Impressionista e moderna. O centro histórico ao longo do rio Sena é classificado como Patrimônio Mundial da UNESCO desde 1991.</p> <p>Paris também é um importante hub de transporte, servida por dois aeroportos internacionais e um sistema de metrô que recebe milhões de passageiros diariamente. A cidade se destaca na sustentabilidade de seu transporte e hospeda várias organizações internacionais, incluindo a UNESCO.</p> <p>Prepare-se para se encantar com a beleza, a cultura vibrante e a gastronomia incomparável de <b>Paris</b>.</p>
+      </section>
+
+	<hr/>
+		
+	<section class="faq py-16">
+		<div class="title">
+		  <h4>Plano de Viagem Personalizado</h4>
+		</div>
+		
+		<div class="accordion" id="accordionExample">
+		<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+      Dia 1
+    </button>
+  </h2>
+  <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+    <div class="accordion-body">
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Manhã: <a target="_blank" href="https://gyg.me/r6xhymMV" style="color: var(--primary); text-decoration: underline;">Museu do Louvre</a></b></h6>
+      <p><b>Descrição:</b> É um ponto icônico de cultura e arte em Paris, ideal para quem ama a cultura local.</p>
+      <p><b>Tempo médio de visita:</b> 3 a 4 horas</p>
+      <p><b>Horário de funcionamento:</b> 9h - 18h</p>
+      <p><b>Imperdível:</b> Não perca a visita à icônica pirâmide de vidro na entrada.</p>
+      <p><b>Endereço:</b> Rue de Rivoli, 75001 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://gyg.me/r6xhymMV">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Almoço: <a target="_blank" href="https://www.lapantruchoise.com/caillebotte" style="color: var(--primary); text-decoration: underline;">Caillebotte</a></b></h6>
+      <p><b>Tipo de Comida:</b> Moderna</p>
+      <p><b>Classificação:</b> Bib Gourmand</p>
+      <p><b>Descrição:</b> Oferece um excelente custo-benefício e é adequado para grupos familiares.</p>
+      <p><b>Preço:</b> $€€</p>
+      <p><b>Imperdível:</b> Prato do dia, que varia conforme os ingredientes frescos.</p>
+      <p><b>Endereço:</b> 4 Rue du Nil, 75002 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://www.lapantruchoise.com/caillebotte">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Tarde: <a target="_blank" href="https://gyg.me/eppprONI" style="color: var(--primary); text-decoration: underline;">Museu d'Orsay</a></b></h6>
+      <p><b>Descrição:</b> Complementa a experiência cultural com uma ênfase em arte posterior ao Louvre.</p>
+      <p><b>Tempo médio de visita:</b> 2 a 3 horas</p>
+      <p><b>Horário de funcionamento:</b> 9h30 - 18h</p>
+      <p><b>Imperdível:</b> Admire a impressionante coleção de pinturas impressionistas.</p>
+      <p><b>Endereço:</b> 1 Rue de la Légion d'Honneur, 75007 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://gyg.me/eppprONI">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Jantar: <a target="_blank" href="https://www.fourseasons.com/paris/dining/restaurants/le_cinq/" style="color: var(--primary); text-decoration: underline;">Le Cinq</a></b></h6>
+      <p><b>Tipo de Comida:</b> Moderna</p>
+      <p><b>Classificação:</b> 3 Estrelas Michelin</p>
+      <p><b>Descrição:</b> Classificação alta e foco em experiências gastronômicas exclusivas, ideal para a cultura local.</p>
+      <p><b>Preço:</b> $$€€€€</p>
+      <p><b>Imperdível:</b> Menu degustação do chef.</p>
+      <p><b>Endereço:</b> 31 Avenue George V, 75008 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://www.fourseasons.com/paris/dining/restaurants/le_cinq/">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Noite: <a target="_blank" href="https://gyg.me/iyq9zy3c" style="color: var(--primary); text-decoration: underline;">Passeio de Barco no Rio Sena</a></b></h6>
+      <p><b>Descrição:</b> Ótima atividade em família que combina lazer com vistas culturais.</p>
+      <p><b>Tempo médio de visita:</b> 1 a 2 horas</p>
+      <p><b>Horário de funcionamento:</b> Variante de acordo com a companhia</p>
+      <p><b>Preço:</b> €15 - €20</p>
+      <p><b>Imperdível:</b> Não perca a oportunidade de ver a cidade sob uma nova perspectiva.</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://gyg.me/iyq9zy3c">Saiba mais</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+      Dia 2
+    </button>
+  </h2>
+  <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+    <div class="accordion-body">
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Manhã: <a target="_blank" href="https://jardin.senat.fr/" style="color: var(--primary); text-decoration: underline;">Jardim de Luxemburgo</a></b></h6>
+      <p><b>Descrição:</b> Um ótimo local para passear, desfrutar da natureza e relaxar em família.</p>
+      <p><b>Tempo médio de visita:</b> 1 a 2 horas</p>
+      <p><b>Horário de funcionamento:</b> 7h30 - 21h</p>
+      <p><b>Imperdível:</b> Explore as tendas de brinquedos e as rodas de balanço para as crianças.</p>
+      <p><b>Endereço:</b> Rue de Médicis - Rue de Vaugirard, 75006 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://jardin.senat.fr/">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Almoço: <a target="_blank" href="http://www.restaurantgaya.com/" style="color: var(--primary); text-decoration: underline;">Gaya par Pierre Gagnaire</a></b></h6>
+      <p><b>Tipo de Comida:</b> Moderna</p>
+      <p><b>Classificação:</b> 1 Estrela Michelin</p>
+      <p><b>Descrição:</b> Alta classificação e ambiente amigável para famílias, promovendo a cultura local da gastronomia.</p>
+      <p><b>Preço:</b> $$€€€</p>
+      <p><b>Imperdível:</b> Salmão com guarnição de legumes variados.</p>
+      <p><b>Endereço:</b> 4 Rue de la Paix, 75002 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="http://www.restaurantgaya.com/">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Tarde: <a target="_blank" href="https://gyg.me/nZUbsbfG" style="color: var(--primary); text-decoration: underline;">Montmartre</a></b></h6>
+      <p><b>Descrição:</b> É um local icônico que oferece cultura e entretenimento em um ambiente vibrante.</p>
+      <p><b>Tempo médio de visita:</b> 2 a 3 horas</p>
+      <p><b>Horário de funcionamento:</b> Abertas 24 horas</p>
+      <p><b>Imperdível:</b> Visite a Basílica do Sagrado Coração e aproveite a vista deslumbrante.</p>
+      <p><b>Endereço:</b> 35 Rue du Chevalier de la Barre, 75018 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://gyg.me/nZUbsbfG">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Jantar: <a target="_blank" href="https://www.lapantruchoise.com/caillebotte" style="color: var(--primary); text-decoration: underline;">Caillebotte</a></b></h6>
+      <p><b>Tipo de Comida:</b> Moderna</p>
+      <p><b>Classificação:</b> Bib Gourmand</p>
+      <p><b>Descrição:</b> Oferece um excelente custo-benefício e é adequado para grupos familiares.</p>
+      <p><b>Preço:</b> $€€</p>
+      <p><b>Imperdível:</b> Prato do dia, que varia conforme os ingredientes frescos.</p>
+      <p><b>Endereço:</b> 4 Rue du Nil, 75002 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://www.lapantruchoise.com/caillebotte">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Noite: Passeio de Barco no Rio Sena</b></h6>
+      <p><b>Descrição:</b> Ótima atividade em família que combina lazer com vistas culturais.</p>
+      <p><b>Tempo médio de visita:</b> 1 a 2 horas</p>
+      <p><b>Horário de funcionamento:</b> Variante de acordo com a companhia</p>
+      <p><b>Preço:</b> €15 - €20</p>
+      <p><b>Imperdível:</b> Não perca a oportunidade de ver a cidade sob uma nova perspectiva.</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://gyg.me/iyq9zy3c">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="accordion-item">
+  <h2 class="accordion-header">
+    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+      Dia 3
+    </button>
+  </h2>
+  <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample" style="">
+    <div class="accordion-body">
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Manhã: <a target="_blank" href="https://gyg.me/eppprONI" style="color: var(--primary); text-decoration: underline;">Museu d'Orsay</a></b></h6>
+      <p><b>Descrição:</b> Admire a impressionante coleção de pinturas impressionistas.</p>
+      <p><b>Tempo médio de visita:</b> 2 a 3 horas</p>
+      <p><b>Horário de funcionamento:</b> 9h30 - 18h</p>
+      <p><b>Imperdível:</b> Admire a impressionante coleção de pinturas impressionistas.</p>
+      <p><b>Endereço:</b> 1 Rue de la Légion d'Honneur, 75007 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+        <p></p>
+        <a target="_blank" href="https://gyg.me/eppprONI">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Almoço: <a target="_blank" href="https://www.fourseasons.com/paris/dining/restaurants/le_cinq/" style="color: var(--primary); text-decoration: underline;">Le Cinq</a></b></h6>
+      <p><b>Tipo de Comida:</b> Moderna</p>
+      <p><b>Classificação:</b> 3 Estrelas Michelin</p>
+      <p><b>Descrição:</b> Menu degustação do chef.</p>
+      <p><b>Preço:</b> $$€€€€</p>
+      <p><b>Motivo da Indicação:</b> Classificação alta e foco em experiências gastronômicas exclusivas, ideal para a cultura local.</p>
+      <p><b>Imperdível:</b> Menu degustação do chef.</p>
+      <p><b>Endereço:</b> 31 Avenue George V, 75008 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+         <p></p>
+         <a target="_blank" href="https://www.fourseasons.com/paris/dining/restaurants/le_cinq/">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Tarde: <a target="_blank" href="https://jardin.senat.fr/" style="color: var(--primary); text-decoration: underline;">Jardim de Luxemburgo</a></b></h6>
+      <p><b>Descrição:</b> Um ótimo local para passear, desfrutar da natureza e relaxar em família.</p>
+      <p><b>Tempo médio de visita:</b> 1 a 2 horas</p>
+      <p><b>Horário de funcionamento:</b> 7h30 - 21h</p>
+      <p><b>Imperdível:</b> Explore as tendas de brinquedos e as rodas de balanço para as crianças.</p>
+      <p><b>Endereço:</b> Rue de Médicis - Rue de Vaugirard, 75006 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+         <p></p>
+         <a target="_blank" href="https://jardin.senat.fr/">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Jantar: <a target="_blank" href="http://www.restaurantgaya.com/" style="color: var(--primary); text-decoration: underline;">Gaya par Pierre Gagnaire</a></b></h6>
+      <p><b>Tipo de Comida:</b> Moderna</p>
+      <p><b>Classificação:</b> 1 Estrela Michelin</p>
+      <p><b>Descrição:</b> Salmão com guarnição de legumes variados.</p>
+      <p><b>Preço:</b> $$€€€</p>
+      <p><b>Motivo da Indicação:</b> Alta classificação e ambiente amigável para famílias, promovendo a cultura local da gastronomia.</p>
+      <p><b>Imperdível:</b> Salmão com guarnição de legumes variados.</p>
+      <p><b>Endereço:</b> 4 Rue de la Paix, 75002 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+         <p></p>
+         <a target="_blank" href="http://www.restaurantgaya.com/">Saiba mais</a>
+      </div>
+
+      <h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Noite: <a target="_blank" href="https://gyg.me/nZUbsbfG" style="color: var(--primary); text-decoration: underline;">Montmartre</a></b></h6>
+      <p><b>Descrição:</b> É um local icônico que oferece cultura e entretenimento em um ambiente vibrante.</p>
+      <p><b>Tempo médio de visita:</b> 2 a 3 horas</p>
+      <p><b>Horário de funcionamento:</b> Abertas 24 horas</p>
+      <p><b>Imperdível:</b> Visite a Basílica do Sagrado Coração e aproveite a vista deslumbrante.</p>
+      <p><b>Endereço:</b> 35 Rue du Chevalier de la Barre, 75018 Paris, França</p>
+      <div class="title d-flex align-items-center justify-content-between">
+         <p></p>
+         <a target="_blank" href="https://gyg.me/nZUbsbfG">Saiba mais</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+		</div>  
+    </section>
+      
+    <!-- reviews start -->
+    <section class="reviews py-16">
+      <!-- title -->
+      <div class="title d-flex align-items-center justify-content-between">
+        <h4 class="shrink-0">Indicações de Hotéis</h4>
+        <!--<a target="_blank" href="#" class="shrink-0 d-inline-block">Ver todos</a>-->
+      </div>
+
+      <div class="review-card d-flex gap-16">
+    <div class="shrink-0 image d-flex align-items-center justify-content-center rounded-full" style="background: var(--secondary);">
+        <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/building.svg" alt="Fauchon l'Hôtel Paris">
+    </div>
+
+    <div class="flex-grow">
+        <div class="d-flex align-items-center justify-content-between">
+            <h4>Fauchon l'Hôtel Paris</h4>
+            <span class="d-inline-block">€300/Noite</span>
+        </div>
+        <span class="d-inline-block">Avaliações: 9.3 <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/heart-red.svg" alt="icon"></span><br/>
+        <span class="d-inline-block">Estrelas: 5 <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="icon"></span>
+        <p>Localizado no 8º arrondissement, este hotel luxuoso oferece fácil acesso a transportes públicos e está próximo de importantes atrações turísticas em Paris. Uma combinação perfeita de elegância e conforto.</p>
+        <div class="title d-flex align-items-center justify-content-between">
+            <h6></h6>
+            <a target="_blank" href="https://tidd.ly/4ewgOJE" class="shrink-0 d-inline-block">Ver mais</a>
+        </div>
+    </div>
+</div>
+
+<div class="review-card d-flex gap-16">
+    <div class="shrink-0 image d-flex align-items-center justify-content-center rounded-full" style="background: var(--secondary);">
+        <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/building.svg" alt="Hôtel Jardin de Cluny">
+    </div>
+
+    <div class="flex-grow">
+        <div class="d-flex align-items-center justify-content-between">
+            <h4>Hôtel Jardin de Cluny</h4>
+            <span class="d-inline-block">€250/Noite</span>
+        </div>
+        <span class="d-inline-block">Avaliações: 9.1 <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/heart-red.svg" alt="icon"></span><br/>
+        <span class="d-inline-block">Estrelas: 4 <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="icon"></span>
+        <p>Situado no 5º arrondissement, próximo ao Quartier Latin, este hotel combina charme e modernidade, além de estar próximo a vários pontos de interesse e estações de metrô. Ideal para quem deseja explorar Paris com estilo.</p>
+        <div class="title d-flex align-items-center justify-content-between">
+            <h6></h6>
+            <a target="_blank" href="https://tidd.ly/4b920gM" class="shrink-0 d-inline-block">Ver mais</a>
+        </div>
+    </div>
+</div>
+
+<div class="review-card d-flex gap-16">
+    <div class="shrink-0 image d-flex align-items-center justify-content-center rounded-full" style="background: var(--secondary);">
+        <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/building.svg" alt="Hôtel Molière">
+    </div>
+
+    <div class="flex-grow">
+        <div class="d-flex align-items-center justify-content-between">
+            <h4>Hôtel Molière</h4>
+            <span class="d-inline-block">€280/Noite</span>
+        </div>
+        <span class="d-inline-block">Avaliações: 9.1 <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/heart-red.svg" alt="icon"></span><br/>
+        <span class="d-inline-block">Estrelas: 4 <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="icon"></span>
+        <p>Localizado no 1º arrondissement, perto do Museu do Louvre, o Hôtel Molière oferece acesso fácil a transporte público, sendo ideal para quem deseja explorar a cidade sem abrir mão do conforto e da localização.</p>
+        <div class="title d-flex align-items-center justify-content-between">
+            <h6></h6>
+            <a target="_blank" href="https://tidd.ly/4b4RFm5" class="shrink-0 d-inline-block">Ver mais</a>
+        </div>
+    </div>
+</div>
+    </section>
+    <!-- reviews end -->
+    
+    <hr/>
+      
+	<!-- location start -->
+	<section class="details-location pt-16">
+	
+		<div class="title">
+		  <h4>Mapa Interativo</h4>
+		</div>
+
+		<div class="overflow-hidden radius-16 map" style="height: 600px;">
+		  <iframe src="https://www.google.com/maps/d/embed?mid=1lcLIKLfKsxDVpRcBz0U688G5iyVSdd8&ehbc=2E312F&noprof=1" style="border:0;height:600px;margin-top:-0px;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+    <!-- location end -->	
+      
+	<hr/>
+		
+	  <!-- details-info -->
+      <section class="details-info pt-32 pb-16">
+        <div class="title">
+          <h4>Antes de Partir</h4>
+        </div>
+				
+		<h5 style="margin-bottom: 15px;"><b>Passaporte e Visto</b></h5>
+<p>Verifique se seu passaporte está válido por pelo menos seis meses após a data de retorno. Para turistas brasileiros, não é necessário visto para estadias de até 90 dias na França. Para obter informações corretas e atualizadas, verifique <a target='_blank' href='https://www.passportindex.org/passport/brazil/'>aqui</a>.</p>
+<div class="title d-flex align-items-center justify-content-between">
+<h6></h6>
+<a target="_blank" href="https://l.travie.com.br/passportindex" class="shrink-0 d-inline-block">Mais detalhes</a>
+</div>
+
+<h5 style="margin-bottom: 15px;"><b>Cópias de Documentos</b></h5>
+<p>Faça cópias (digitais e físicas) de documentos importantes, como passaporte, seguro de viagem, passagens e reservas de hotel.</p>
+<div class="title d-flex align-items-center justify-content-between">
+<h6></h6>
+<a target="_blank" href="" class="shrink-0 d-inline-block"></a>
+</div>
+
+<h5 style="margin-bottom: 15px;"><b>Cartão Global</b></h5>
+<p>Optar por um cartão global para suas despesas em viagens internacionais é uma excelente forma de economizar e oferecer segurança. Nós recomendamos fortemente a <b>Wise</b>.</p>
+<div class="title d-flex align-items-center justify-content-between">
+<h6></h6>
+<a target="_blank" href="https://l.travie.com.br/wise" class="shrink-0 d-inline-block">Mais detalhes</a>
+</div>
+
+<h5 style="margin-bottom: 15px;"><b>Chip de Dados Móveis Internacional</b></h5>
+<p>Às vezes, conectar-se pode ser complicado no exterior. O <b>AmericaChip</b> é uma ótima opção, oferecendo chips com cobertura em vários países e dados ilimitados.</p>
+<div class="title d-flex align-items-center justify-content-between">
+<h6></h6>
+<a target="_blank" href="https://l.travie.com.br/americachip" class="shrink-0 d-inline-block">Mais detalhes</a>
+</div>
+
+<h5 style="margin-bottom: 15px;"><b>Seguro Viagem</b></h5>
+<p>Contrate um seguro viagem para garantir sua tranquilidade durante a estadia na França. A <b>SegurosPromo</b> oferece várias opções para você escolher.</p>
+<div class="title d-flex align-items-center justify-content-between">
+<h6></h6>
+<a target="_blank" href="https://l.travie.com.br/segurospromo" class="shrink-0 d-inline-block">Mais detalhes</a>
+</div>
+
+<h5 style="margin-bottom: 15px;"><b>Medicações e Cuidados Pessoais</b></h5>
+<p>Se você faz uso de algum medicamento regularmente, não se esqueça de levar o suficiente para toda a viagem. Além disso, lembre-se de consultar seu médico para obter recomendações sobre a saúde durante a viagem.</p>
+
+		
+	  </section>
+	  
+	  <hr/>
+		
+	  	  <!-- visited start -->
+    <section class="visited py-12">
+      <!-- title -->
+      <div class="title d-flex align-items-center justify-content-between">
+        <h4 class="shrink-0">Nossas Indicações</h4>
+		<div class="custom-pagination visited-pagination" style="margin-left: 100px;"></div>
+      </div>
+
+      <div class="swiper visited-swiper">
+        <div class="swiper-wrapper">
+          
+		   <div class="swiper-slide place-card">
+            <a target="_blank" href="https://l.travie.com.br/booking">
+              <div class="image position-relative">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/parceiros/booking.png" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4></h4>
+                <p class="d-flex align-items-center gap-04 location">
+                  
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://l.travie.com.br/booking">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+		  
+		  <div class="swiper-slide place-card">
+            <a target="_blank" href="https://l.travie.com.br/wise">
+              <div class="image position-relative">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/parceiros/wise.png" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4></h4>
+                <p class="d-flex align-items-center gap-04 location">
+                  
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://l.travie.com.br/wise">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+		  
+          <div class="swiper-slide place-card">
+            <a target="_blank" href="https://l.travie.com.br/segurospromo">
+              <div class="image position-relative">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/parceiros/segurospromo.png" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4></h4>
+                <p class="d-flex align-items-center gap-04 location">
+                  
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://l.travie.com.br/segurospromo">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+
+		  <div class="swiper-slide place-card">
+            <a target="_blank" href="https://l.travie.com.br/assistcard">
+              <div class="image position-relative">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/parceiros/assist-card.png" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4></h4>
+                <p class="d-flex align-items-center gap-04 location">
+                  
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://l.travie.com.br/assistcard">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+
+		  <div class="swiper-slide place-card">
+            <a target="_blank" href="https://l.travie.com.br/rentcars">
+              <div class="image position-relative">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/parceiros/rentcars.png" alt="desert" class="img-fluid w-100 overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4></h4>
+                <p class="d-flex align-items-center gap-04 location">
+                  
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://l.travie.com.br/rentcars">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- visited end -->
+	
+    <hr/>  
+	  
+	  <!-- details-info -->
+      <section class="details-info pt-32 pb-16">
+        <div class="title">
+          <h4>No Aeroporto</h4>
+        </div>
+				
+		<h5 style="margin-top: 5px;margin-bottom: 15px;"><b>Aeroporto Charles de Gaulle (CDG)</b></h5>
+		<p>O Aeroporto Charles de Gaulle é o principal aeroporto de Paris, localizado a cerca de 25 km ao nordeste do centro da cidade. Após desembarcar, siga as placas de imigração e alfândega. A segurança no aeroporto é severa, então mantenha sempre um olho em sua bagagem e itens pessoais.</p>
+		
+		<h5 style="margin-top: 15px;margin-bottom: 15px;"><b>Opções de Transporte para o Centro</b></h5>
+		
+		<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>RER B</b></h6>
+		<p>Um trem expresso que conecta o aeroporto ao centro de Paris em cerca de 30 minutos. A parada central é na estação Gare du Nord, facilitando o acesso a outras linhas de metrô.</p>
+		
+		<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Metrô (linha 2 e 6)</b></h6>
+		<p>Embora não haja uma conexão direta de metrô do CDG, você pode pegar o RER B até a estação Gare du Nord e transferir para a linha 4 do metrô, que leva a diversos pontos turísticos da cidade.</p>
+		
+		<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Ônibus Roissybus</b></h6>
+		<p>Este ônibus leva você diretamente ao centro de Paris (Opéra) em aproximadamente 60 minutos. É uma opção confortável e econômica para quem viaja com bagagem.</p>
+		
+		<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Táxis</b></h6>
+		<p>Disponíveis na saída do terminal, os táxis são uma opção conveniente, embora mais cara. O tempo de trajeto pode variar dependendo do tráfego, mas normalmente leva entre 40 e 60 minutos.</p>
+		
+		<p><b>Importante:</b> Antes de viajar, verifique se é necessário visto para entrar na França. Você pode obter essas informações atualizadas no site da <a href="https://l.travie.com.br/passportindex">Passport Index</a>, digitando "França" no campo de busca.</p>
+	  </section>
+
+    <hr/>
+      
+	   <!-- guide start -->
+      <section class="guide py-16">
+        <!-- title -->
+        <div class="title">
+          <h4>Aplicativos Indicados</h4>
+        </div>
+
+        <!-- cards -->
+        <div class="d-flex gap-24 all-cards scrollbar-hidden">
+
+          <!-- item 1 -->
+          <a target="_blank" href="#" class="d-flex gap-16 item w-fit shrink-0">
+            <div class="image position-relative shrink-0">
+              <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/apps/google-maps.webp" alt="Google Maps" class="guide-img object-fit-cover img-fluid radius-12">
+              <div class="rating d-flex align-items-center gap-04 w-fit">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="Star">
+                <span class="d-inline-block">4.3</span>
+              </div>
+			  <h5 style="font-size: 0.65rem; margin-top: 5px; text-align: center;">Google Maps</h5>
+            </div>
+          </a>
+		  
+          <!-- item 2 -->
+          <a target="_blank" href="#" class="d-flex gap-16 item w-fit shrink-0">
+            <div class="image position-relative shrink-0">
+              <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/apps/google-tradutor.webp" alt="Google Tradutor" class="guide-img object-fit-cover img-fluid radius-12">
+              <div class="rating d-flex align-items-center gap-04 w-fit">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="Star">
+                <span class="d-inline-block">4.3</span>
+              </div>
+			  <h5 style="font-size: 0.65rem; margin-top: 5px; text-align: center;">Google Tradutor</h5>
+            </div>
+          </a>
+
+          <!-- item 3 -->
+          <a target="_blank" href="#" class="d-flex gap-16 item w-fit shrink-0">
+            <div class="image position-relative shrink-0">
+              <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/apps/citymapper.webp" alt="Citymapper" class="guide-img object-fit-cover img-fluid radius-12">
+              <div class="rating d-flex align-items-center gap-04 w-fit">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="Star">
+                <span class="d-inline-block">4.8</span>
+              </div>
+			  <h5 style="font-size: 0.65rem; margin-top: 5px; text-align: center;">Citymapper</h5>
+            </div>
+          </a>
+
+		  <!-- item 4 -->
+          <a target="_blank" href="#" class="d-flex gap-16 item w-fit shrink-0">
+            <div class="image position-relative shrink-0">
+              <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/apps/tripadvisor.webp" alt="Tripadvisor" class="guide-img object-fit-cover img-fluid radius-12">
+              <div class="rating d-flex align-items-center gap-04 w-fit">
+                <img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/star-yellow.svg" alt="Star">
+                <span class="d-inline-block">4.6</span>
+              </div>
+			  <h5 style="font-size: 0.65rem; margin-top: 5px; text-align: center;">Tripadvisor</h5>
+            </div>
+          </a>
+
+        </div>
+      </section>
+      <!-- guide end -->
+      
+    <hr/>
+
+	<!-- details-info -->
+	<section class="details-info pt-32 pb-16">
+		<div class="title">
+		  <h4>Durante a Estadia</h4>
+		</div>
+				
+		<h5 style="margin-top: 15px;margin-bottom: 15px;"><b>Transporte Público</b></h5>
+
+		<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Metrô</b></h6>
+	<p>O <b>metrô (Métro)</b> é o meio de transporte mais prático e econômico para se locomover em Paris. Ele cobre toda a cidade e funciona até tarde da noite.</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Cartão Navigo</b></h6>
+	<p>Recomendo adquirir o <b>Cartão Navigo</b>, que oferece tarifas mais baixas em relação aos bilhetes avulsos e pode ser usado em toda a RATP (metrô, ônibus, RER e tram).</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Bilhetes T+ e Pacotes</b></h6>
+	<p>Os bilhetes T+ servem para várias viagens. Há também pacotes de 10 bilhetes com desconto, que podem ser vantajosos.</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Ônibus e Tram</b></h6>
+	<p>Os ônibus são uma ótima maneira de ver a cidade de uma nova perspectiva. Você pode usar o mesmo cartão para pagá-los. Aproveite também o tram, que é muito confortável.</p>
+
+	<hr/>
+
+	<h5 style="margin-top: 15px;margin-bottom: 15px;"><b>Segurança</b></h5>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Cuidados com Pertences</b></h6>
+	<p>Paris é, em geral, uma cidade segura, mas tenha cuidado com seus pertences, principalmente em locais turísticos. Use bolsas que possam ser fechadas e mantenha um olho nos seus objetos.</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Áreas a Evitar à Noite</b></h6>
+	<p>Evite áreas menos iluminadas e com menos movimento à noite, como certas partes de Montmartre e perto da estação Gare du Nord, principalmente em horários de pico.</p>
+
+	<hr/>
+
+	<h5 style="margin-top: 15px;margin-bottom: 15px;"><b>Clima e Vestimenta</b></h5>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Clima em Julho</b></h6>
+	<p>Julho em Paris costuma ser bastante quente, variando entre 18°C e 30°C. É recomendado levar protetor solar e um chapéu, além de um casaco leve para as noites mais frescas.</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Vestimentas Adequadas</b></h6>
+	<p>Leve roupas leves e confortáveis, mas também tenha um casaco para as noites. Um bom par de sapatos para caminhadas é essencial, pois você vai explorar muitos locais.</p>
+
+	<hr/>
+
+	<h5 style="margin-top: 15px;margin-bottom: 15px;"><b>Costumes Locais em Paris</b></h5>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Saudações</b></h6>
+	<p>Um simples <i>"Bonjour"</i> é sempre bem-vindo. Os parisienses apreciam a educação. <b>Nota:</b> em lojas e restaurantes, cumprimente antes de fazer seu pedido!</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Pontualidade</b></h6>
+	<p>A pontualidade é valorizada. Tente ser pontual para compromissos, pois isso é considerado um sinal de respeito.</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Gorjetas</b></h6>
+	<p>Gorjetas não são obrigatórias, mas é comum deixar uma pequena quantia (10%) se o serviço foi bom.</p>
+
+	<hr/>
+
+	<h5 style="margin-top: 15px;margin-bottom: 15px;"><b>Dicas Adicionais</b></h5>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Explorar Museus</b></h6>
+	<p>Não perca a oportunidade de visitar o <b>Museu do Louvre</b> e o <b>Museu d'Orsay</b>. Aproveite os dias gratuitos ou tarifas reduzidas se houver!</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Mercados Locais</b></h6>
+	<p>Visite o <b>Marché Bastille</b> e outros mercados locais para degustar a gastronomia e produtos frescos da região!</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Adaptadores de Tomada</b></h6>
+	<p>A tomada padrão em Paris é do tipo E. Leve adaptadores universais para garantir que você possa usar seus eletrônicos.</p>
+
+	<h6 style="color: #000;margin-top: 10px;margin-bottom: 10px;"><b>Não Esqueça</b></h6>
+	<p>Não se esqueça de levar um <b>chip de telefone internacional</b> da <a href="https://l.travie.com.br/americachip">AmericaChip</a>, carregadores, power banks e medicamentos que você possa precisar!</p>		
+	</section>	
+
+	<hr/>
+	  
+	  <!-- visited start -->
+    <section class="visited py-12">
+      <!-- title -->
+      <div class="title d-flex align-items-center justify-content-between">
+        <h4 class="shrink-0">Indicado para Viajantes</h4>
+		<div class="custom-pagination visited-pagination" style="margin-left: 100px;"></div>
+      </div>
+
+      <div class="swiper visited-swiper">
+        <div class="swiper-wrapper">
+          <!-- item-1 -->
+          <div class="swiper-slide place-card">
+            <a target="_blank" href="https://amzn.to/3L6jsIr">
+              <div class="image position-relative">
+                <img src="https://www.tagevent.com.br/arquivos/temp/test/travgo/assets/images/produtos/adaptadorUniversal.png" alt="desert" style="max-height: 180px; width: auto; display: block; margin-left: auto; margin-right: auto;" class="img-fluid overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4 style="text-align: center;">Adaptador Universal</h4>
+                <p style="text-align: center;" class="d-flex align-items-center gap-04 location">
+                  Adaptador de tomada universal bivolt aceito e 150 países
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://amzn.to/3L6jsIr">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- item-2 -->
+          <div class="swiper-slide place-card">
+            <a target="_blank" href="https://amzn.to/3W5TTwn">
+              <div class="image position-relative">
+                <img src="https://www.tagevent.com.br/arquivos/temp/test/travgo/assets/images/produtos/cadeadoSenha.png" alt="desert" style="max-height: 180px; width: auto; display: block; margin-left: auto; margin-right: auto;" class="img-fluid overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4 style="text-align: center;">Cadeado com Senha</h4>
+                <p style="text-align: center;" class="d-flex align-items-center gap-04 location">
+                  Cadeados com segredo por combinação numérica.
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://amzn.to/3W5TTwn">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+
+          <!-- item-3 -->
+		  <div class="swiper-slide place-card">
+            <a target="_blank" href="https://amzn.to/3zrqlS3">
+              <div class="image position-relative">
+                <img src="https://www.tagevent.com.br/arquivos/temp/test/travgo/assets/images/produtos/appleAirTag.png" alt="desert" style="max-height: 180px; width: auto; display: block; margin-left: auto; margin-right: auto;" class="img-fluid overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4 style="text-align: center;">Apple AirTag</h4>
+                <p style="text-align: center;" class="d-flex align-items-center gap-04 location">
+                  Muito utilizado para rastrear sua mala durante as viagens.
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://amzn.to/3zrqlS3">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+		  
+		  <!-- item-4 -->
+		  <div class="swiper-slide place-card">
+            <a target="_blank" href="https://amzn.to/3xC8SG0">
+              <div class="image position-relative">
+                <img src="https://www.tagevent.com.br/arquivos/temp/test/travgo/assets/images/produtos/samsungSmartTag.png" alt="desert" style="max-height: 180px; width: auto; display: block; margin-left: auto; margin-right: auto;" class="img-fluid overflow-hidden radius-8">
+              </div>
+              <div class="content">
+                <h4 style="text-align: center;">Samsung SmartTag2</h4>
+                <p style="text-align: center;" class="d-flex align-items-center gap-04 location">
+                  Muito utilizado para rastrear sua mala durante as viagens.
+                </p>
+				<div class="title d-flex align-items-center justify-content-between">
+					<p></p>
+					<a target="_blank" href="https://amzn.to/3xC8SG0">Eu quero</a>
+					<p></p>
+				</div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+	  
+	 </section>
+    <!-- visited end -->
+
+
+      
+
+    </section>
+    <!-- details-body end -->
+
+	<hr/>
+	
+	<!-- profile-info start -->
+	<section class="profile-info px-24" style="margin-top: 0px; margin-bottom: 50px;">
+	  
+	  <div class="overflow-hidden radius-10" style="height: 75px; width: 175px; padding-top: 10px;">
+		<img src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/images/profile/logo-travie.png" alt="profile" class="img-fluid w-100">
+	  </div>
+
+	  <h4 style="padding-bottom: 15px;">Seu Parceiro de Viagens</h4>
+	  <p>Fundada com um sonho de tornar as viagens mais acessíveis e emocionantes para todos, simplificamos a forma de elaborar os roteiros personalizados, tornando cada viagem única e inesquecível.</p>
+	  <div class="d-flex align-items-center gap-16">
+		<a target="_blank" style="padding: unset;" href="https://l.travie.com.br/instagram"><img style="width: 48px;" src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/instagram.svg" alt="icon"></a>
+		<a target="_blank" href="https://blog.travie.com.br/paris/" style="width: auto;" class="call-btn flex-grow d-inline-block radius-12">Guia de Destinos</a>
+		<a target="_blank" style="padding: unset;"  href="https://web.whatsapp.com/send?phone=5511973213333&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20meu%20roteiro%20personalizado.%20Pode%20me%20ajudar%3F"><img style="width: 32px;" src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/whatsapp.svg" alt="icon"></a>
+	  </div>
+	  
+	</section>
+    <!-- profile-info end -->
+
+    <!-- details-footer start -->
+    <section style="background:#f7f7f7; box-shadow: 0px 0px 0px 0px darkgray, -0em 0 .9em darkgray;" class="details-footer d-flex align-items-center justify-content-between gap-8 w-100">
+      <p><img style="width: 20px;" src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/svg/wallet-blue.svg" alt="icon"><span> De R$80 por R$20?</span></p>
+      <a target="_blank" href="https://l.travie.com.br/checkout">EU QUERO</a>
+    </section>
+    <!-- details-footer end -->
+  </main>
+
+  <!-- jquery -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/jquery-3.6.1.min.js"></script>
+
+  <!-- bootstrap -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/bootstrap.bundle.min.js"></script>
+
+  <!-- jquery ui -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/jquery-ui.js"></script>
+
+  <!-- mixitup -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/mixitup.min.js"></script>
+
+  <!-- gasp -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
+  <!-- draggable -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/Draggable.min.js"></script>
+
+  <!-- swiper -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/swiper-bundle.min.js"></script>
+
+  <!-- datepicker -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/jquery.datetimepicker.full.js"></script>
+
+  <!-- google-map api -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCodvr4TmsTJdYPjs_5PWLPTNLA9uA4iq8&callback=initMap" type="text/javascript"></script>
+
+  <!-- script -->
+  <script src="https://tagevent.com.br/arquivos/temp/test/travgo/assets/js/script.js"></script>
+</body>
+</html>
